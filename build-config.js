@@ -24,6 +24,8 @@ if (!url || !anon) {
 }
 
 const target = path.join(__dirname, "scripts", "supabase-config.js");
+fs.mkdirSync(path.dirname(target), { recursive: true });
+
 const contents =
 `/* Generated at build time from Vercel Environment Variables. Do not edit. */
 window.SUPABASE_CONFIG = {
