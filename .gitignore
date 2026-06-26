@@ -1,0 +1,7 @@
+# Generated at build time from Vercel env vars — never commit real keys
+scripts/supabase-config.js
+
+node_modules/
+.vercel/
+.DS_Store
+*.log
